@@ -75,11 +75,12 @@ p::before{
 .fijo {
     position: fixed;
     height: 50px;
-    width: 100px;
-    background-color: violet;
+    width: 100%;
+    background-color: blueviolet;
     top: 0;
     left: 0;
-    box-shadow: 5px 10px 10 px black;
+    box-shadow: 10px 10px 10px black;
+    display: none;
 }
 
 .fijo ul {
@@ -87,15 +88,33 @@ p::before{
     list-style: none;
     justify-content: flex-end;
 }
-
-.fijo ul li {
-    padding-left: 20px;
+ .fijo ul li {
+     padding-left: 16px;
+ }
+.menuMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
+ /* and (orientation: landscape) */
 
-/*and (orientation: landscape)*/
-
-@media (min-width: 700px) {
-    .fijo{
-        background-color: coral;
+@media (min-width: 400px) {
+    .fijo {
+        display: block;
     }
+    .menuMobile {
+        display: none;
+    }
+}
+@media (min-width: 700px) {
+    .fijo {
+        background-color: coral;
+        /* display: none; */
+    }
+    /* .menuMobile {
+        display: block;
+    } */
 }
