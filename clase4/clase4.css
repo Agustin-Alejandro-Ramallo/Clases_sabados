@@ -68,6 +68,34 @@ p::before{
     height: 200px;
     background-color: green;
 }
-.dos{
+.dos {
     background-color: blue;
+}
+
+.fijo {
+    position: fixed;
+    height: 50px;
+    width: 100px;
+    background-color: violet;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 10px 10 px black;
+}
+
+.fijo ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.fijo ul li {
+    padding-left: 20px;
+}
+
+/*and (orientation: landscape)*/
+
+@media (min-width: 700px) {
+    .fijo{
+        background-color: coral;
+    }
 }
