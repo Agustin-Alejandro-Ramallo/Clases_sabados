@@ -1,0 +1,16 @@
+/*:root{
+    --variableCss:22px;
+}*/
+.contenedor .titulo {
+  color: blue;
+  font-size: 55px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.contenedor {
+  background-color: green;
+}
+
+
+/*# sourceMappingURL=sass.css.map */

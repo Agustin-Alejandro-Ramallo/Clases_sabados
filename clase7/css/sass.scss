@@ -1,0 +1,25 @@
+$variableColor:black;
+@import 'utils.scss';
+
+/*:root{
+    --variableCss:22px;
+}*/
+
+
+
+%titulo{
+    color: $variableColor;
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.contenedor{
+    background-color: green;
+    .titulo{
+        /*font-size: 50px;
+        font-size: var(--variableCss, 28px);
+        color: $variableColor */
+        @extend %titulo
+     }
+}
