@@ -12,7 +12,10 @@
 .encabezado:hover {
     box-shadow: 0 0 5px #10C35C;
 }
-
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
 .menu ul {
     display: flex;
     list-style: none;
